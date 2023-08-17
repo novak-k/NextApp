@@ -4,12 +4,16 @@ import background from '../../../public/pexels-photo-black.jpeg';
 import Image from 'next/image';
 import Button from '@/components/button/Button';
 
+export const metadata = {
+  title: 'NextApp About',
+  description: 'This is About Page',
+}
+
 const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image
-          // src="https://www.pexels.com/photo/empty-brown-canvas-235985/"
           fill={true}
           src={background}
           alt=""
